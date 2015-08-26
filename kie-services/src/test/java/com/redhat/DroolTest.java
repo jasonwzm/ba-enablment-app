@@ -20,7 +20,7 @@ public class DroolTest {
 
 		// when
 		service.runRules(facts, "simple.Ruleflow");
-
+		System.out.println(greeting.getGreeting());
 		// then
 		Assert.assertEquals("Hello, World!", greeting.getGreeting());
 	}
